@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="TTS Emulator to use for StreamLab donos">
+<title>GD Displayer+</title>
+<!-- STYLES -->
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="css/gdplus.css">
+<!-- FONTS -->
+<link href="https://fonts.googleapis.com/css?family=Sen:400,700&display=swap" rel="stylesheet">
+<!-- FA -->
+<script src="https://kit.fontawesome.com/a71e54cca8.js" crossorigin="anonymous"></script>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+</head>
+<body>
+<div class="content" align="center">
+<div class="name">GD Displayer+ Beta</div>
+<br>
+<label style="font-size: 2em" for="beatmap">Link to your guest difficulty: </label>
+<br>
+<a>Make sure you selected your difficulty!</a>
+<br>
+<input class="tts-textbox" id="beatmap" placeholder="https://osu.ppy.sh/beatmapsets/727099#osu/1569227">
+<div class="links">
+	<label style="font-size: 2em" for="api">osu! API Key: </label> 
+	<div class="why-api">
+		<p><b>YOUR API KEY WILL NOT BE STORED AND ONLY BE USED TO RETRIEVE BEATMAP DATA.
+		<br><br>
+		THE SCRIPT RUNS CLIENT SIDE ONLY.
+		<br><br>
+		SEE SOURCE CODE BELOW.</b></p>
+	</div>
+</div>
+<a href="https://old.ppy.sh/p/api" target="_blank"><u>Get your osu! API key here</u> (If you had to login it will go to forums, close and click again)</a>
+<br>
+<input class="tts-textbox" id="api" placeholder="API Key">
+<br>
+<a href="https://github.com/ppy/osu-api/wiki#Beatmap" target="_blank"> <u>Why is API Key required?</u> (See: Parameters)</a>
+<div class="links">
+<button class="tts-submit" onclick="generate()">Generate!</button>
+<button class="tts-submit" type="submit" id="copyButton">Copy to Clipboard</button>
+</div>
+<textarea id="bbcode" placeholder="Generated BB Code will be here" class="tts-textbox"></textarea>
+<br>
+<a href="https://github.com/Enkrypton/GD-DisplayerPlus"> <u>View Source Code</u></a>
+</div>
+<script src="js/gdplus.js"></script>
+</body>
+</html>
